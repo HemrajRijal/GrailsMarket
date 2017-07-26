@@ -8,7 +8,7 @@ class Product {
     String status
     String serialNumber
     String manufacturer
-    Byte[] image
+    String imagePath
 
     static constraints = {
         name(blank: false, nullable: false)

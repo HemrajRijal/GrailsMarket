@@ -20,6 +20,8 @@ class ProductController {
     }
 
     def save() {
+        params.imagePath="Here I am"
+        params.remove("image")
         def productInstance = new Product(params)
         if (!productInstance.save(flush: true)) {
             render(view: "create", model: [productInstance: productInstance])

@@ -34,7 +34,7 @@
 					
 						<g:sortableColumn property="manufacturer" title="${message(code: 'product.manufacturer.label', default: 'Manufacturer')}" />
 					
-						<g:sortableColumn property="category" title="${message(code: 'product.category.label', default: 'Category')}" />
+						<th><g:message code="product.category.label" default="Category" /></th>
 					
 					</tr>
 				</thead>

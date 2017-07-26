@@ -47,7 +47,7 @@
 		<g:message code="product.category.label" default="Category" />
 		<span class="required-indicator">*</span>
 	</label>
-	
+	<g:select id="category" name="category.id" from="${grailsmarket.Category.list()}" optionKey="id" required="" value="${productInstance?.category?.id}" class="many-to-one"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: productInstance, field: 'image', 'error')} required">

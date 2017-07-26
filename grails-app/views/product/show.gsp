@@ -72,12 +72,12 @@
 				<li class="fieldcontain">
 					<span id="category-label" class="property-label"><g:message code="product.category.label" default="Category" /></span>
 					
-						<span class="property-value" aria-labelledby="category-label"><g:fieldValue bean="${productInstance}" field="category"/></span>
+						<span class="property-value" aria-labelledby="category-label"><g:link controller="category" action="show" id="${productInstance?.category?.id}">${productInstance?.category?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${productInstance?.image}">
+				<g:if test="${productInstance?.imagePath}">
 				<li class="fieldcontain">
 					<span id="image-label" class="property-label"><g:message code="product.image.label" default="Image" /></span>
 					
